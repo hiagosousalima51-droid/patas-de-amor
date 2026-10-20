@@ -17,7 +17,7 @@ O site completo está em `dist/`. Abra `dist/index.html` no navegador ou sirva e
 
 Edite `dist/config.js`:
 
-1. `whatsapp`: número real em formato internacional, somente dígitos, começando com 55 e DDD. Vazio ou inválido mantém a demonstração. Nunca use um telefone inventado.
+1. `whatsapp`: configurado como `5511976830438`, correspondente a `(11) 97683-0438`. Para substituir, use o formato internacional, somente dígitos, começando com 55 e DDD. Vazio ou inválido mantém a demonstração.
 2. `whatsappLabel`: texto de contato opcional.
 3. `instagram` e `instagramLabel`: URL HTTPS e identificação oficial.
 4. `address`, `openingHours` e `maps`: endereço, horários e link HTTPS confirmado do Google Maps.

@@ -1,8 +1,8 @@
 // Dados comerciais públicos. Não inserir credenciais ou dados de clientes neste arquivo.
 window.PATAS_CONFIG = {
   businessName: 'Patas de Amor',
-  whatsapp: '', // Formato internacional, somente dígitos: 55 + DDD + número real.
-  whatsappLabel: '',
+  whatsapp: '5511976830438', // Formato internacional, somente dígitos: 55 + DDD + número real.
+  whatsappLabel: '(11) 97683-0438',
   instagram: '', // URL https://www.instagram.com/...
   instagramLabel: '',
   address: '',
