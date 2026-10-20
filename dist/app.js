@@ -82,7 +82,7 @@
     const invalid = [...required,'date'].filter(id => !validateField(id));
     if(invalid.length) { status.textContent = 'Confira os campos destacados para preparar sua solicitação.'; $(`#${invalid[0]}`).focus(); return; }
     const text = config.texts || {};
-    const message = `${text.greeting || 'Olá, equipe Patas de Amor! 🐾'}\n\n${text.request || 'Gostaria de consultar a disponibilidade para um agendamento.'}\n\nTutor: ${$('#tutor').value.trim()}\nPet: ${$('#pet').value.trim()}\nServiço: ${serviceSelect.value}\nPorte: ${$('#size').value}\nData de preferência: ${formatDate(dateField.value)}\nPeríodo: ${$('#period').value || 'Sem preferência'}\n\n${text.closing || 'Podem me informar os horários disponíveis? Obrigado!'}`;
+    const message = `${text.greeting || 'Olá, equipe Patas de Amor!'}\n\n${text.request || 'Gostaria de consultar a disponibilidade para um agendamento.'}\n\nTutor: ${$('#tutor').value.trim()}\nPet: ${$('#pet').value.trim()}\nServiço: ${serviceSelect.value}\nPorte: ${$('#size').value}\nData de preferência: ${formatDate(dateField.value)}\nPeríodo: ${$('#period').value || 'Sem preferência'}\n\n${text.closing || 'Podem me informar os horários disponíveis? Obrigado!'}`;
     $('#message-text').textContent = message;
     $('#message-preview').hidden = false;
     if(!phoneReady) {
