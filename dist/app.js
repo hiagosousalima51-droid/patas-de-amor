@@ -44,7 +44,7 @@
     const link = document.createElement('a'); link.href = safeURL(config.instagram); link.textContent = config.instagramLabel || 'Nosso Instagram'; const icon = document.createElementNS('http://www.w3.org/2000/svg','svg'); icon.setAttribute('aria-hidden','true'); icon.innerHTML = '<use href="#arrow-up-right"></use>'; link.append(' ', icon); link.target='_blank'; link.rel='noopener noreferrer'; $('#contact-instagram').replaceChildren(link);
   }
   if(config.logo && !/^(javascript:|data:)/i.test(config.logo)) document.querySelectorAll('.brand').forEach(brand => {
-    const img = new Image(); img.src = config.logo; img.alt = config.businessName || 'Patas de Amor'; img.style.cssText='max-width:190px;max-height:62px;object-fit:contain'; img.onload = () => brand.replaceChildren(img);
+    const img = new Image(); img.src = config.logo; img.alt = config.businessName || 'MK Banho e Tosa'; img.style.cssText='max-width:190px;max-height:62px;object-fit:contain'; img.onload = () => brand.replaceChildren(img);
   });
   const serviceSelect = $('#service');
   if(Array.isArray(config.services) && config.services.length) {
@@ -82,11 +82,11 @@
     const invalid = [...required,'date'].filter(id => !validateField(id));
     if(invalid.length) { status.textContent = 'Confira os campos destacados para preparar sua solicitação.'; $(`#${invalid[0]}`).focus(); return; }
     const text = config.texts || {};
-    const message = `${text.greeting || 'Olá, equipe Patas de Amor!'}\n\n${text.request || 'Gostaria de consultar a disponibilidade para um agendamento.'}\n\nTutor: ${$('#tutor').value.trim()}\nPet: ${$('#pet').value.trim()}\nServiço: ${serviceSelect.value}\nPorte: ${$('#size').value}\nData de preferência: ${formatDate(dateField.value)}\nPeríodo: ${$('#period').value || 'Sem preferência'}\n\n${text.closing || 'Podem me informar os horários disponíveis? Obrigado!'}`;
+    const message = `${text.greeting || 'Olá, equipe MK Banho e Tosa!'}\n\n${text.request || 'Gostaria de consultar a disponibilidade para um agendamento.'}\n\nTutor: ${$('#tutor').value.trim()}\nPet: ${$('#pet').value.trim()}\nServiço: ${serviceSelect.value}\nPorte: ${$('#size').value}\nData de preferência: ${formatDate(dateField.value)}\nPeríodo: ${$('#period').value || 'Sem preferência'}\n\n${text.closing || 'Podem me informar os horários disponíveis? Obrigado!'}`;
     $('#message-text').textContent = message;
     $('#message-preview').hidden = false;
     if(!phoneReady) {
-      status.textContent = 'Mensagem preparada em demonstração. Nada foi enviado: o WhatsApp da Patas de Amor ainda precisa ser configurado.';
+      status.textContent = 'Mensagem preparada em demonstração. Nada foi enviado: o WhatsApp da MK Banho e Tosa ainda precisa ser configurado.';
       $('#message-preview').open = true;
       status.focus({preventScroll:true}); return;
     }
