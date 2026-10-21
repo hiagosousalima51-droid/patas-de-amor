@@ -1,8 +1,8 @@
 // Dados comerciais públicos. Não inserir credenciais ou dados de clientes neste arquivo.
 window.PATAS_CONFIG = {
-  businessName: 'MK Banho e Tosa',
-  whatsapp: '5511950332336', // Formato internacional, somente dígitos: 55 + DDD + número real.
-  whatsappLabel: '(11) 95033-2336',
+  businessName: 'Bichos & Mimos Pet Shop',
+  whatsapp: '5519999999999', // Número fictício para demonstração.
+  whatsappLabel: '(19) 99999-9999',
   instagram: '', // URL https://www.instagram.com/...
   instagramLabel: '',
   address: '',
@@ -12,7 +12,7 @@ window.PATAS_CONFIG = {
   services: ['Banho', 'Tosa', 'Banho + Tosa', 'Outros cuidados'],
   texts: {
     demo: 'Modo demonstração: o WhatsApp da empresa ainda não foi configurado. Nenhuma solicitação será enviada.',
-    greeting: 'Olá, equipe MK Banho e Tosa!',
+    greeting: 'Olá, equipe Bichos & Mimos Pet Shop!',
     request: 'Gostaria de consultar a disponibilidade para um agendamento.',
     closing: 'Podem me informar os horários disponíveis? Obrigado!'
   }

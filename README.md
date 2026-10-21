@@ -1,4 +1,4 @@
-# MK Banho e Tosa — Banho & Tosa
+# Bichos & Mimos Pet Shop — Banho & Tosa
 
 Landing page estática em HTML, CSS e JavaScript. GSAP 3.13.0 + ScrollTrigger locais. Sem framework, backend, banco de dados, autenticação ou armazenamento de dados pessoais.
 
@@ -17,7 +17,7 @@ O site completo está em `dist/`. Abra `dist/index.html` no navegador ou sirva e
 
 Edite `dist/config.js`:
 
-1. `whatsapp`: configurado como `5511950332336`, correspondente a `(11) 95033-2336`. Para substituir, use o formato internacional, somente dígitos, começando com 55 e DDD. Vazio ou inválido mantém a demonstração.
+1. `whatsapp`: configurado como `5519999999999`, correspondente a `(19) 99999-9999`. Para substituir, use o formato internacional, somente dígitos, começando com 55 e DDD. Vazio ou inválido mantém a demonstração.
 2. `whatsappLabel`: texto de contato opcional.
 3. `instagram` e `instagramLabel`: URL HTTPS e identificação oficial.
 4. `address`, `openingHours` e `maps`: endereço, horários e link HTTPS confirmado do Google Maps.
@@ -39,7 +39,7 @@ Sem JavaScript, navegação, conteúdo e FAQ continuam acessíveis; o botão de 
 
 O anexo recebido continha apenas texto. Pendentes: logotipo original, capturas BarkBox, fotos autorizadas do estabelecimento/pets e todos os dados comerciais. Não há depoimentos, preços, certificações, histórico, clientes reais nem atendimento a gatos inventados.
 
-O hero foi gerado com a ferramenta integrada imagegen e convertido para WebP preservando transparência. Prompt utilizado: “Create a photorealistic premium pet grooming advertising cutout, isolated on genuinely transparent background. One extremely cute golden retriever, sitting upright, front view, entire dog including both front paws fully visible, happy friendly open mouth with pink tongue, warm honey golden fluffy fur, beautiful expressive dark eyes, wearing a small plain turquoise bandana. Head subtly tilted. Premium commercial studio photography, soft natural light, carefully detailed wispy fur edges, true anatomy. Portrait composition, dog fills frame with modest transparent margins, no objects, no pedestal, no text, no logo, no graphic elements. This is a hero image for Brazilian MK Banho e Tosa dog grooming landing page, cutout to overlap a pastel yellow circle.” Arquivo final: `dist/assets/hero-dog.webp`.
+O hero foi gerado com a ferramenta integrada imagegen e convertido para WebP preservando transparência. Prompt utilizado: “Create a photorealistic premium pet grooming advertising cutout, isolated on genuinely transparent background. One extremely cute golden retriever, sitting upright, front view, entire dog including both front paws fully visible, happy friendly open mouth with pink tongue, warm honey golden fluffy fur, beautiful expressive dark eyes, wearing a small plain turquoise bandana. Head subtly tilted. Premium commercial studio photography, soft natural light, carefully detailed wispy fur edges, true anatomy. Portrait composition, dog fills frame with modest transparent margins, no objects, no pedestal, no text, no logo, no graphic elements. This is a hero image for Brazilian Bichos & Mimos Pet Shop dog grooming landing page, cutout to overlap a pastel yellow circle.” Arquivo final: `dist/assets/hero-dog.webp`.
 
 Fotografias ilustrativas locais, obtidas do Unsplash:
 
@@ -63,3 +63,4 @@ Ramo com WhatsApp configurado testado por configuração efêmera interceptada: 
 FAQ, ausência de armazenamento local/de sessão, funcionamento sem JavaScript, registro do ScrollTrigger e zero animações GSAP ativas com movimento reduzido verificados. Sintaxe dos dois arquivos JavaScript validada com `node --check`. Projeto buildless: build não se aplica.
 
 Não realizados: envio real no WhatsApp, auditoria completa com leitor de tela, medição de Core Web Vitals em produção ou testes em aparelhos físicos. A análise não equivale a certificação de acessibilidade.
+
