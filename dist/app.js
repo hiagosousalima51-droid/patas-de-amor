@@ -41,7 +41,7 @@
   if(config.openingHours) $('#contact-hours').textContent = config.openingHours;
   if(safeURL(config.maps)) { $('#maps-link').href = safeURL(config.maps); $('#maps-link').hidden = false; }
   if(safeURL(config.instagram)) {
-    const link = document.createElement('a'); link.href = safeURL(config.instagram); link.textContent = config.instagramLabel || 'Nosso Instagram ↗'; link.target='_blank'; link.rel='noopener noreferrer'; $('#contact-instagram').replaceChildren(link);
+    const link = document.createElement('a'); link.href = safeURL(config.instagram); link.textContent = config.instagramLabel || 'Nosso Instagram'; const icon = document.createElementNS('http://www.w3.org/2000/svg','svg'); icon.setAttribute('aria-hidden','true'); icon.innerHTML = '<use href="#arrow-up-right"></use>'; link.append(' ', icon); link.target='_blank'; link.rel='noopener noreferrer'; $('#contact-instagram').replaceChildren(link);
   }
   if(config.logo && !/^(javascript:|data:)/i.test(config.logo)) document.querySelectorAll('.brand').forEach(brand => {
     const img = new Image(); img.src = config.logo; img.alt = config.businessName || 'Patas de Amor'; img.style.cssText='max-width:190px;max-height:62px;object-fit:contain'; img.onload = () => brand.replaceChildren(img);
